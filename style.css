@@ -100,7 +100,8 @@ header {
   position: relative;
   display: none;
   width: 100%;
-  max-height: 500px;
+  /* max-height: 500px; */
+  min-height: 400px;
   aspect-ratio: 5/3;
   padding: 2em;
   border-radius: 0 10px 10px 10px;
@@ -237,5 +238,11 @@ header {
   .caption {
     margin: 0;
     padding: 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .tab-folders .tab-content {
+    max-height: 500px;
   }
 }
